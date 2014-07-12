@@ -44,6 +44,41 @@ var app = {
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
 
+        // parentElement.ontouchstart = function() {
+        //     console.log('touch');
+        //     navigator.notification.vibrate(1000);
+        // }
+
         console.log('Received Event: ' + id);
+
+        $('#btncapture').bind('touchend', function() {
+            console.log('start capture image');
+            navigator.device.capture.captureImage(captureSuccess, captureError);
+        }).show();
+
+        $('#btnselimage').bind('touchend', function() {
+            console.log('start select image');
+            navigator.camera.getPicture(cameraSuccess, cameraError, 
+                { quality: 50, sourceType: Camera.PictureSourceType.PHOTOLIBRARY, destinationType: Camera.DestinationType.FILE_URI });
+        }).show();
     }
 };
+
+function captureSuccess(mediaFiles) {
+    for (i = 0, len = mediaFiles.length; i < len; i += 1) {
+        console.log(i + ' :: ' + mediaFiles[i].fullPath);
+    }
+}
+
+function captureError(error) {
+    console.log('captureError: '+ error.code);
+}
+
+function cameraSuccess(imageURI) {
+    console.log('imageURI: ' + imageURI);
+    $('#imgsel').attr('src', imageURI);
+}
+
+function cameraError(error) {
+    console.log('cameraError: '+ error);   
+}
