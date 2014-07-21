@@ -107,6 +107,13 @@ module.exports = [
         ]
     },
     {
+        "file": "plugins/plugin.google.maps/www/googlemaps-cdv-plugin.js",
+        "id": "plugin.google.maps.phonegap-googlemaps-plugin",
+        "clobbers": [
+            "plugin.google.maps"
+        ]
+    },
+    {
         "file": "plugins/org.apache.cordova.file/www/DirectoryEntry.js",
         "id": "org.apache.cordova.file.DirectoryEntry",
         "clobbers": [
@@ -261,7 +268,10 @@ module.exports.metadata =
     "org.apache.cordova.media-capture": "0.3.2-dev",
     "org.apache.cordova.camera": "0.3.0",
     "org.apache.cordova.network-information": "0.2.10",
-    "org.apache.cordova.file": "1.2.0"
+    "plugin.google.maps": "1.1.3",
+    "org.apache.cordova.file": "1.2.0",
+    "com.google.playservices": "17.0.0",
+    "android.support.v4": "1.0.0"
 }
 // BOTTOM OF METADATA
 });

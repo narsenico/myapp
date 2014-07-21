@@ -13,6 +13,7 @@ c:\Users\Gianfranco\Documents\dev\phonegap\myapp\platforms\android\res\drawable-
 c:\Users\Gianfranco\Documents\dev\phonegap\myapp\platforms\android\res\drawable-port-xhdpi\screen.png \
 c:\Users\Gianfranco\Documents\dev\phonegap\myapp\platforms\android\res\drawable-xhdpi\icon.png \
 c:\Users\Gianfranco\Documents\dev\phonegap\myapp\platforms\android\res\values\strings.xml \
+c:\Users\Gianfranco\Documents\dev\phonegap\myapp\platforms\android\res\values\version.xml \
 c:\Users\Gianfranco\Documents\dev\phonegap\myapp\platforms\android\res\xml\config.xml \
 c:\Users\Gianfranco\Documents\dev\phonegap\myapp\platforms\android\ant-build\res\drawable\icon.png \
 c:\Users\Gianfranco\Documents\dev\phonegap\myapp\platforms\android\ant-build\res\drawable-hdpi\icon.png \

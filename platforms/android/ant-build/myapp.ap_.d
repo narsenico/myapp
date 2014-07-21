@@ -13,6 +13,7 @@ c:\Users\Gianfranco\Documents\dev\phonegap\myapp\platforms\android\res\drawable-
 c:\Users\Gianfranco\Documents\dev\phonegap\myapp\platforms\android\res\drawable-port-xhdpi\screen.png \
 c:\Users\Gianfranco\Documents\dev\phonegap\myapp\platforms\android\res\drawable-xhdpi\icon.png \
 c:\Users\Gianfranco\Documents\dev\phonegap\myapp\platforms\android\res\values\strings.xml \
+c:\Users\Gianfranco\Documents\dev\phonegap\myapp\platforms\android\res\values\version.xml \
 c:\Users\Gianfranco\Documents\dev\phonegap\myapp\platforms\android\res\xml\config.xml \
 c:\Users\Gianfranco\Documents\dev\phonegap\myapp\platforms\android\ant-build\res\drawable\icon.png \
 c:\Users\Gianfranco\Documents\dev\phonegap\myapp\platforms\android\ant-build\res\drawable-hdpi\icon.png \
@@ -53,6 +54,7 @@ c:\Users\Gianfranco\Documents\dev\phonegap\myapp\platforms\android\assets\www\pl
 c:\Users\Gianfranco\Documents\dev\phonegap\myapp\platforms\android\assets\www\plugins\org.apache.cordova.media-capture \
 c:\Users\Gianfranco\Documents\dev\phonegap\myapp\platforms\android\assets\www\plugins\org.apache.cordova.network-information \
 c:\Users\Gianfranco\Documents\dev\phonegap\myapp\platforms\android\assets\www\plugins\org.apache.cordova.vibration \
+c:\Users\Gianfranco\Documents\dev\phonegap\myapp\platforms\android\assets\www\plugins\plugin.google.maps \
 c:\Users\Gianfranco\Documents\dev\phonegap\myapp\platforms\android\assets\www\plugins\org.apache.cordova.camera\www \
 c:\Users\Gianfranco\Documents\dev\phonegap\myapp\platforms\android\assets\www\plugins\org.apache.cordova.camera\www\Camera.js \
 c:\Users\Gianfranco\Documents\dev\phonegap\myapp\platforms\android\assets\www\plugins\org.apache.cordova.camera\www\CameraConstants.js \
@@ -96,6 +98,8 @@ c:\Users\Gianfranco\Documents\dev\phonegap\myapp\platforms\android\assets\www\pl
 c:\Users\Gianfranco\Documents\dev\phonegap\myapp\platforms\android\assets\www\plugins\org.apache.cordova.network-information\www\network.js \
 c:\Users\Gianfranco\Documents\dev\phonegap\myapp\platforms\android\assets\www\plugins\org.apache.cordova.vibration\www \
 c:\Users\Gianfranco\Documents\dev\phonegap\myapp\platforms\android\assets\www\plugins\org.apache.cordova.vibration\www\vibration.js \
+c:\Users\Gianfranco\Documents\dev\phonegap\myapp\platforms\android\assets\www\plugins\plugin.google.maps\www \
+c:\Users\Gianfranco\Documents\dev\phonegap\myapp\platforms\android\assets\www\plugins\plugin.google.maps\www\googlemaps-cdv-plugin.js \
 c:\Users\Gianfranco\Documents\dev\phonegap\myapp\platforms\android\assets\www\res\icon \
 c:\Users\Gianfranco\Documents\dev\phonegap\myapp\platforms\android\assets\www\res\screen \
 c:\Users\Gianfranco\Documents\dev\phonegap\myapp\platforms\android\assets\www\res\icon\android \

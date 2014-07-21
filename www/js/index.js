@@ -17,6 +17,8 @@
  * under the License.
  */
 var app = {
+    //riferimento di google maps
+    map: null,
     // Application Constructor
     initialize: function() {
         this.bindEvents();
@@ -33,52 +35,44 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
-        app.receivedEvent('deviceready');
-    },
-    // Update DOM on a Received Event
-    receivedEvent: function(id) {
-        var parentElement = document.getElementById(id);
-        var listeningElement = parentElement.querySelector('.listening');
-        var receivedElement = parentElement.querySelector('.received');
+        var div = $('#map_canvas')[0];
+        var lat = new plugin.google.maps.LatLng(45.309866, 9.498068);
 
-        listeningElement.setAttribute('style', 'display:none;');
-        receivedElement.setAttribute('style', 'display:block;');
+        console.log('myapp: init map');
 
-        // parentElement.ontouchstart = function() {
-        //     console.log('touch');
-        //     navigator.notification.vibrate(1000);
-        // }
+        app.map = plugin.google.maps.Map.getMap({
+          // 'mapType': plugin.google.maps.MapTypeId.HYBRID,
+          'controls': {
+            'compass': true,
+            'myLocationButton': true,
+            'indoorPicker': true,
+            'zoom': true
+          },
+          'gestures': {
+            'scroll': true,
+            'tilt': true,
+            'rotate': true,
+            'zoom': true
+          },
+          'camera': {
+            'latLng': lat,
+            'tilt': 30,
+            'zoom': 15,
+            'bearing': 50
+          }
+        });
+        app.map.addEventListener(plugin.google.maps.event.MAP_READY, function() {
+            $('#note').html('MAP READY');
 
-        console.log('Received Event: ' + id);
+            app.map.addMarker({
+              'position': lat,
+              'title': "Ciao cari colleghi!"
+            });
 
-        $('#btncapture').bind('touchend', function() {
-            console.log('start capture image');
-            navigator.device.capture.captureImage(captureSuccess, captureError);
-        }).show();
+        });
 
-        $('#btnselimage').bind('touchend', function() {
-            console.log('start select image');
-            navigator.camera.getPicture(cameraSuccess, cameraError, 
-                { quality: 50, sourceType: Camera.PictureSourceType.PHOTOLIBRARY, destinationType: Camera.DestinationType.FILE_URI });
-        }).show();
+        console.log('myapp: set div');
+
+        app.map.setDiv(div);
     }
 };
-
-function captureSuccess(mediaFiles) {
-    for (i = 0, len = mediaFiles.length; i < len; i += 1) {
-        console.log(i + ' :: ' + mediaFiles[i].fullPath);
-    }
-}
-
-function captureError(error) {
-    console.log('captureError: '+ error.code);
-}
-
-function cameraSuccess(imageURI) {
-    console.log('imageURI: ' + imageURI);
-    $('#imgsel').attr('src', imageURI);
-}
-
-function cameraError(error) {
-    console.log('cameraError: '+ error);   
-}
